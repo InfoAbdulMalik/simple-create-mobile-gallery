@@ -1,0 +1,92 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:#ddd;
+}
+.mobile{
+    width:380px;
+    height:90vh;
+    background-color:#ddd;
+    margin:0 auto;
+    border-top:30px groove rgb(189, 115, 115);
+    border-bottom:50px groove rgb(189, 115, 115);
+    border-radius:25px;
+    margin-top:20px;
+    position:relative;
+}
+.container{
+    display:flex;
+    gap:5px;
+    height:100%;
+    background-color:white;
+    justify-content: center;
+    box-shadow:0px 0px 10px 0px rgb(187, 187, 187);
+    flex-wrap:wrap;
+    overflow:scroll;
+    overflow-x: hidden;
+    padding: 0px 10px;   
+}
+#img-part{
+   box-shadow: 0px 0px 4px 0px rgb(202, 202, 202);
+}
+#empty{
+     color:#a0a0a0;
+     font-size:90px;
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+}
+.btn-img{
+     width:calc(50% - 5px);
+    height:100px;
+     background-color:transparent;
+     margin-top:5px;
+     border:none;
+     margin-bottom:5px;
+     position: relative;
+}
+.upload-btn{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    border:none;
+    position:absolute;
+    left:50%;
+    bottom:-40px;
+    transform: translatex(-50%);
+    box-shadow:0px 0px 7px 0px rgb(165, 165, 165);
+}
+.upload-btn .fa-upload{
+    font-size:30px;
+    color:#404040;
+}
+.upload-btn #upload-input{
+       border:1px solid red;
+       width: 100%;
+       height: 100%;
+       position:absolute;
+       top:0;
+       left:0;
+       opacity:0;      
+}
+#action-div{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    top:7px;
+    right:6px;
+}
+#action-div button{
+    padding:5px 5px;
+    background-color:rgba(0, 0, 0, 0.7);
+    border:none;
+}
+#action-div i{
+    font-size: 15px;
+    color:rgb(231, 231, 231);
+}
